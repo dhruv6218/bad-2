@@ -41,7 +41,7 @@ function SignupForm() {
     setIsLoading(true);
     setError(null);
 
-    const { error: signUpError } = await signUp(email, 'magiclink', name, password);
+    const { error: signUpError } = await signUp(email, password, name);
 
     setIsLoading(false);
 
